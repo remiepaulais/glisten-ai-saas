@@ -6,10 +6,10 @@
   "status": true,
   "json": {
     "Main": {
-      "title": {
+      "site_title": {
         "type": "Text",
         "config": {
-          "label": "Site title",
+          "label": "Site Title",
           "placeholder": ""
         }
       },

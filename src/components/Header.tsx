@@ -1,5 +1,15 @@
-import React from "react"
+import React from 'react'
 
-export default function Header() {
-  return <div>Header</div>
+import Navbar from '@/components/Navbar'
+import { createClient } from '@/prismicio'
+
+export default async function Header() {
+  const client = createClient()
+  const settings = await client.getSingle('settings')
+
+  return (
+    <header>
+      <Navbar settings={settings} />
+    </header>
+  )
 }

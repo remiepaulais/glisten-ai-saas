@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-import { fontFamily } from "tailwindcss/defaultTheme";
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-space-grotesk)", ...fontFamily.sans],
-      },
-    },
+        sans: ['var(--font-space-grotesk)', ...fontFamily.sans]
+      }
+    }
   },
-  plugins: [],
-};
+  plugins: [require('@tailwindcss/typography')]
+}
